@@ -1,0 +1,82 @@
+body{
+	background: hsl(0, 0%, 95%);
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	height: 100vh;
+	margin: 0 auto;
+	align-items: center;
+	max-width: 1440px;
+}
+
+div.orange, div.cyan, div.dark-cyan{
+	width: 15em;
+}
+
+div.orange{
+	background: hsl(31, 77%, 52%);
+	border-radius: 5px 0 0 5px;
+}
+
+div.dark-cyan{
+	background: hsl(179, 100%, 13%);
+	border-radius: 0 5px 5px 0;
+}
+
+div.cyan{
+	background: hsl(184, 100%, 22%);
+}
+
+div.orange button{
+	background: hsl(31, 77%, 52%);
+	color: white;	
+}
+
+div.cyan button{
+	background: hsl(184, 100%, 22%);
+	color: white;	
+}
+
+div.dark-cyan button{
+	background: hsl(179, 100%, 13%);
+	color: white;	
+}
+button{
+	border: 2px solid white;
+	border-radius: 20px;
+	padding: 9px 20px;
+	margin-top: 3em;
+	cursor: pointer;
+}
+
+.marg{
+	margin-left: 10px;
+	margin: 25px ;
+	max-width: 10em;
+	align-items: center;
+
+}
+h2, button{
+	color: hsl(0, 0%, 95%);
+}
+p{
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 1.5em;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+}
+h2{
+	font-family: 'Anton', sans-serif
+	font-weight: 700;
+}
+
+@media (max-device-width: 680px){
+	.main{
+		flex-direction: column;
+		height: 100%;
+	}
+}
